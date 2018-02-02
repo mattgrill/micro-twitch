@@ -1,0 +1,17 @@
+{
+  "name": "micro-twitch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "micro",
+    "prettier": "prettier --single-quote --trailing-comma --write '*.js'"
+  },
+  "dependencies": {
+    "micro": "^9.1.0",
+    "microrouter": "^3.0.0"
+  },
+  "devDependencies": {
+    "prettier": "1.10.2"
+  }
+}
