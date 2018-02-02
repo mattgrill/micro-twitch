@@ -10,7 +10,7 @@ const streams = (req, res) => {
     template.streamTemplate({
       title: 'Streams',
       streams: req.params._.split('/'),
-    })
+    }),
   );
 };
 

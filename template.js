@@ -12,18 +12,18 @@ const header = title => `
 `;
 
 const twitch = streams => `
+  <div class="grid">
     ${streams
       .map(
         stream =>
-          '<iframe style="height: ' +
-          100 / streams.length +
-          '%;" id="stream-' +
+          '<iframe id="stream-' +
           stream +
           '" src="https://player.twitch.tv/?channel=' +
           stream +
-          '"></iframe>'
+          '"></iframe>',
       )
       .join('')}
+  </div>
 `;
 
 const streamTemplate = ({ title, streams }) => `
